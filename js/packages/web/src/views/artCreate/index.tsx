@@ -991,16 +991,7 @@ const RoyaltiesStep = (props: {
           type="primary"
           size="large"
           onClick={() => {
-            // Find all royalties that are invalid (0)
-            const zeroedRoyalties = royalties.filter(
-              royalty => royalty.amount === 0,
-            );
 
-            if (zeroedRoyalties.length !== 0 || totalRoyaltyShares !== 100) {
-              // Contains a share that is 0 or total shares does not equal 100, show errors.
-              setIsShowErrors(true);
-              return;
-            }
 
             const creatorStructs: Creator[] = [
               ...fixedCreators,
