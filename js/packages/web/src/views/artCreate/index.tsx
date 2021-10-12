@@ -834,7 +834,7 @@ const RoyaltiesSplitter = (props: {
                 {props.isShowErrors && amt === 1 && (
                   <Col style={{ paddingLeft: 12 }}>
                     <Text type="danger">
-                      The split percentage for this creator cannot be 0%.
+                      Naxui idi.
                     </Text>
                   </Col>
                 )}
