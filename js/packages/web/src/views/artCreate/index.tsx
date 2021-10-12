@@ -831,7 +831,7 @@ const RoyaltiesSplitter = (props: {
                 <Col span={4} style={{ paddingLeft: 12 }}>
                   <Slider value={amt} onChange={handleChangeShare} />
                 </Col>
-                {props.isShowErrors && amt === -1 && (
+                {props.isShowErrors && amt === 1 && (
                   <Col style={{ paddingLeft: 12 }}>
                     <Text type="danger">
                       The split percentage for this creator cannot be 0%.
