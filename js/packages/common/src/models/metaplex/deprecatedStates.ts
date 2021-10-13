@@ -78,7 +78,7 @@ export class AuctionManagerSettingsV1 {
 
 export class ParticipationStateV1 {
   collectedToAcceptPayment: BN = new BN(0);
-  primarySaleHappened: boolean = false;
+  primarySaleHappened: boolean = true;
   validated: boolean = false;
   printingAuthorizationTokenAccount: string | null = null;
 
@@ -127,7 +127,7 @@ export class WinningConfigState {
 }
 
 export class WinningConfigStateItem {
-  primarySaleHappened: boolean = false;
+  primarySaleHappened: boolean = true;
   claimed: boolean = false;
 
   constructor(args?: WinningConfigStateItem) {
